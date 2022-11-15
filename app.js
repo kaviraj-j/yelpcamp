@@ -50,17 +50,20 @@ app.use(mongoSanitize({
 }))
 
 const store = new MongoStore({
-    url: dbUrl,
+    mongoUrl: dbUrl,
     touchAfter: 24 * 60 * 60
 })
 
-const sessionConfig = {
+store.on("error", (err) => {
+    console.log('Mongo Store Error ', err)
+})
 
+const sessionConfig = {
+    store,
     name: 'session',
     secret,
     resave: false,
     saveUninitialized: true,
-    store,
     cookie: {
         httpOnly: true,
         // secure: true,
