@@ -1,8 +1,8 @@
 # yelpcamp
-# This project lets you to create a user and upload campgrounds. Users can also update or delete the campgorunds.
-# There is also a review session for each campground.
-# This is a project of a Web Development Bootcamp 2022 by Colt Steel in Udemy.
-#It is created using NodeJs, ExpressJs, MongoDB and ejs as view engine.
+This project lets you to create a user and upload campgrounds. Users can also update or delete the campgorunds.
+There is also a review session for each campground.
+This is a project of a Web Development Bootcamp 2022 by Colt Steel in Udemy.
+It is created using NodeJs, ExpressJs, MongoDB and ejs as view engine.
 
 Note: 
 To run this project create a '.env' file in the main repository and add the following:
